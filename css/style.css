@@ -1,0 +1,919 @@
+/* -------------------------------------------------------------------------- */
+/*                                puplic style                                */
+/* -------------------------------------------------------------------------- */
+/* :root{scroll-behavior:smooth} */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pcolor: #00c3da;
+  --scolor: #fff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: capitalize;
+  overflow-y: hidden;
+  height: 2000px;
+}
+.clr {
+  clear: both;
+}
+.teaxt-main {
+  color: var(--pcolor);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #1f1f1f;
+  line-height: 1.3;
+}
+::selection {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Start Nvabar                                */
+/* -------------------------------------------------------------------------- */
+#main {
+  transition: all 0.4s ease-in;
+}
+nav.navbar.navbar-expand-lg {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+nav .social-media::before {
+  content: "";
+  width: 1px;
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: -31px;
+  left: -8px;
+}
+nav a.nav-link.px-md-3 {
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--scolor) !important;
+}
+nav ul.navbar-nav.mb-2.mb-lg-0.social li a {
+  color: var(--scolor) !important;
+  transition: 0.3s all ease-in;
+  font-size: 0.9rem;
+}
+nav ul.navbar-nav.mb-2.mb-lg-0.social li a:hover {
+  color: #ccc !important;
+}
+/* 
+======================================================================================
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RWD Navbar<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+======================================================================================
+*/
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  nav .social-media {
+    display: none;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  nav .social-media {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  nav .social-media {
+    position: relative;
+  }
+}
+@media screen and (min-width: 933px) and (max-width: 1200px) {
+  nav .social-media {
+    position: relative;
+  }
+}
+@media screen and (min-width: 1201px) {
+  nav .social-media {
+    position: relative;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                               End Nvabar                                   */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                               START Header                                 */
+/* -------------------------------------------------------------------------- */
+header#home {
+  padding-bottom: 6.25rem;
+}
+.fix-btn {
+  padding: 10px 21px;
+  color: white;
+  font-weight: 700;
+}
+#home button.btn.btn-warning.fix-btn.second {
+  background-color: transparent;
+  border-color: white;
+  padding: 10px 27px;
+  transition: 0.4s all ease-in;
+}
+#home button.btn.btn-warning.fix-btn.second:hover {
+  background-color: white;
+  color: black;
+}
+.fix-btn:hover {
+  background-color: #00d5ee;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+#home .overlay {
+  position: relative;
+}
+#home .overlay::after {
+  content: "";
+  background-color: rgba(31, 31, 31, 0.55);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+}
+#home .carousel-holder {
+  z-index: 999;
+}
+
+#home span.fas.fa-long-arrow-alt-left {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 0;
+  width: 52px;
+  height: 42px;
+  border-left: none;
+  font-size: 27px;
+  z-index: 99;
+}
+#home span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+}
+#home span:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+  transition: all 0.3s ease-out 0s;
+}
+#home span:hover.fas.fa-long-arrow-alt-left {
+  color: rgb(0 0 0 / 74%);
+}
+#home span:hover.fas.fa-long-arrow-alt-right {
+  color: rgb(0 0 0 / 74%);
+}
+
+#home span.visually-hidden {
+  left: 0;
+}
+
+#home span.fas.fa-long-arrow-alt-right {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 0;
+  width: 52px;
+  height: 42px;
+  border-left: none;
+  font-size: 27px;
+  z-index: 99;
+}
+#home span.fas.fa-long-arrow-alt-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+}
+#home span.fas.fa-long-arrow-alt-right:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+}
+/*
+>>>>>>>>>>>> animation<<<<<<<<<<<< 
+*/
+
+#home .carousel-holder p {
+  animation: zoom-in 4s ease alternate;
+  font-size: 0.9rem;
+  font-weight: 700;
+  word-spacing: 2px;
+}
+@keyframes zoom-in {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.btn-holder {
+  animation: zoom-in 5s ease alternate;
+}
+@keyframes zoom-in {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+/* 
+======================================================================================
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RWD Header<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+======================================================================================
+*/
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  #home button.carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+  #home .carousel-holder h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--scolor);
+    animation: zoom-in 1s ease alternate;
+  }
+  @keyframes zoom-in {
+    0% {
+      transform: scale(0, 0);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  #home button.carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+  #home .carousel-holder h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--scolor);
+    animation: zoom-in 1s ease alternate;
+  }
+  @keyframes zoom-in {
+    0% {
+      transform: scale(0, 0);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #home .carousel-holder h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--scolor);
+    animation: zoom-in 1s ease alternate;
+  }
+  @keyframes zoom-in {
+    0% {
+      transform: scale(0, 0);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  #home button.carousel-control-prev {
+    top: auto;
+    bottom: 50%;
+  }
+  #home button.carousel-control-next {
+    left: 0;
+    bottom: 43.7%;
+    top: auto;
+  }
+}
+@media screen and (min-width: 933px) and (max-width: 1200px) {
+  #home .carousel-holder h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--scolor);
+    animation: zoom-in 1s ease alternate;
+  }
+  @keyframes zoom-in {
+    0% {
+      transform: scale(0, 0);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+@media screen and (min-width: 1201px) {
+  #home .carousel-holder h1 {
+    font-size: 6.25rem;
+    font-weight: 700;
+    color: var(--scolor);
+    animation: zoom-in 1s ease alternate;
+  }
+  @keyframes zoom-in {
+    0% {
+      transform: scale(0, 0);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Start About                                */
+/* -------------------------------------------------------------------------- */
+section#about {
+  padding-bottom: 6.25rem;
+}
+
+#about span.anmi-about {
+  color: var(--pcolor);
+  font-weight: 700;
+}
+#about h6 {
+  font-size: 0.81rem;
+}
+#about button.btn.btn-light.about {
+  padding: 0.81rem 1.81rem;
+  background: transparent;
+  border: 1px solid #dedede;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 0.68rem;
+  transition: 0.4s all ease-in;
+}
+#about button.btn.btn-light.about:hover {
+  background-color: #1f1f1f;
+  border-color: #1f1f1f;
+  color: #fff;
+}
+/*
+>>>>>>>>>>>> animation<<<<<<<<<<<< 
+*/
+span.anmi-about::after {
+  content: "|";
+  animation-name: typing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0.6s;
+}
+
+@keyframes typing {
+  0% {
+    content: "a |";
+  }
+  10% {
+    content: " ap |";
+  }
+  20% {
+    content: " app |";
+  }
+  30% {
+    content: "apps|";
+  }
+  40% {
+    content: "w |";
+  }
+  42% {
+    content: "we |";
+  }
+  43% {
+    content: "web |";
+  }
+  44% {
+    content: "webs |";
+  }
+  45% {
+    content: "websi |";
+  }
+  46% {
+    content: "websit |";
+  }
+  47% {
+    content: "website |";
+  }
+  49% {
+    content: "s |";
+  }
+  50% {
+    content: "so|";
+  }
+  53% {
+    content: "sof|";
+  }
+  60% {
+    content: "soft |";
+  }
+  70% {
+    content: "softwa |";
+  }
+  80% {
+    content: "softwa |";
+  }
+  90% {
+    content: "softwar |";
+  }
+  100% {
+    content: "software|";
+  }
+}
+/* 
+======================================================================================
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RWD About<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+======================================================================================
+*/
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #about .text-center p {
+    padding: 0;
+    font-size: 1.68rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #about .text-center p {
+    padding: 0.625rem 7.9rem;
+    font-size: 1.68rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Strart Team                                */
+/* -------------------------------------------------------------------------- */
+section#team {
+  border-top: 1px solid #eee;
+  padding-bottom: 6.25rem;
+}
+#team .creative-team.text-center {
+  padding-top: 6.25rem;
+}
+#team ul.team-social.list-unstyled {
+  margin-left: 6%;
+  padding-top: 10px;
+}
+#team ul.team-social.list-unstyled li {
+  display: inline-block;
+  margin-right: 6px;
+}
+#team ul.team-social.list-unstyled li a {
+  color: #fff;
+  font-size: 0.8rem;
+  transition: 0.2s all ease-in;
+}
+#team ul.team-social.list-unstyled li a:hover {
+  text-shadow: 0 0 6px rgb(255 255 255 / 70%);
+}
+
+.team-caption {
+  position: absolute;
+  top: 10%;
+  background-color: rgba(0, 195, 218, 0.9);
+  height: 100%;
+  width: 100%;
+  transition: 0.2s all ease-in;
+  opacity: 0;
+  color: white;
+}
+.team-item {
+  overflow: hidden;
+}
+.team-item:hover .team-caption {
+  top: 0;
+  opacity: 999;
+}
+
+.team-title {
+  position: absolute;
+  bottom: 0;
+  left: 6%;
+}
+.team-title h4 {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: white;
+}
+.team-title p {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.creative-holder.position-relative h3 {
+  bottom: 32%;
+  font-weight: 700;
+  font-size: 1.81rem;
+}
+.creative-holder.position-relative h2 {
+  font-size: 5.37rem;
+  opacity: 0.1;
+  font-weight: 700;
+}
+.creative-holder.position-relative p {
+  color: #787878c2;
+  font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  End Team                                  */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                               Start Services                               */
+/* -------------------------------------------------------------------------- */
+#services {
+  background-color: #1f1f1f;
+  opacity: 0.7;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+#services h4.servcies-hold {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #ffffff;
+}
+#services .servcies-up h2 {
+  font-size: 5.37rem;
+  opacity: 0.1;
+  font-weight: 700;
+  color: #ffffff;
+}
+#services .servcies-up h3 {
+  left: 4%;
+  top: 21%;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+#services .servcies-up p {
+  font-weight: 700;
+  color: #ffffff;
+}
+#services .check-list > li {
+  padding-top: 1.3rem;
+  font-weight: 600;
+  color: #ffffffa8;
+}
+
+/* 
+======================================================================================
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RWD About<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+======================================================================================
+*/
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  #services h4.servcies-hold {
+    text-align: center;
+    margin-bottom: 3.25rem;
+  }
+  #services .servcies-up h2 {
+    text-align: center;
+  }
+  #services .servcies-up h3 {
+    left: 27%;
+  }
+  #services .servcies-up p {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  #services h4.servcies-hold {
+    text-align: center;
+    margin-bottom: 3.25rem;
+  }
+  #services .servcies-up h2 {
+    text-align: center;
+  }
+  #services .servcies-up h3 {
+    left: 27%;
+  }
+  #services .servcies-up p {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #services .servcies-up h2 {
+    text-align: center;
+  }
+  #services .servcies-up h3 {
+    left: 37%;
+  }
+  #services .servcies-up p {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 933px) and (max-width: 1200px) {
+  #services .servcies-up p {
+    text-align: center;
+  }
+
+  #services .servcies-up h2 {
+    text-align: center;
+  }
+  #services .servcies-up h3 {
+    left: 37%;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                                End Servcies                                */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                 Start Work                                 */
+/* -------------------------------------------------------------------------- */
+#work {
+  background-color: rgb(247, 247, 247);
+  padding-bottom: 6.25rem;
+  padding-top: 6.25rem;
+}
+#work .pricing-holder {
+  background-color: white;
+  padding: 2.12rem 2.3rem;
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 40px;
+  transition: 0.4s all ease-in;
+}
+#work .pricing-holder:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 65px;
+}
+
+#work .pricing-holder h3 {
+  font-size: 0.81rem;
+}
+#work .price {
+  font-size: 39px;
+  font-weight: 600;
+}
+#work .price span {
+  vertical-align: top;
+  font-size: 21px;
+  font-weight: 600;
+}
+#work li.mt-3.fw-bolder.fix {
+  font-size: 0.9rem;
+}
+#work button.btn.btn-info a {
+  font-size: 14px;
+}
+#work .pricing-holder.featured {
+  transform: scale(1.09);
+}
+#work .pricing-holder.featured .price {
+  color: rgb(0, 195, 218);
+}
+#work .pricing-head.holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#work .pricing-head.holder h3 {
+  margin-bottom: 0;
+}
+#work button.btn.btn-info.rounded-pill {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.75rem;
+}
+
+/* 
+======================================================================================
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RWD Work<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+======================================================================================
+*/
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  #work .pricing-holder.featured {
+    transform: scale(1);
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                                  End Work                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                              Start Testimonial                             */
+/* -------------------------------------------------------------------------- */
+
+#testimonial .slider-image {
+  width: 7rem;
+  height: 7rem;
+}
+#testimonial h2.text-center {
+  font-size: 17px;
+}
+#testimonial .carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background-color: rgb(0, 195, 218);
+}
+#testimonial button.carousel-control-prev {
+  justify-content: start;
+}
+#testimonial button.carousel-control-next {
+  justify-content: end;
+}
+#testimonial .slider-item {
+  padding: 6.25rem 7.31rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 15px 30px;
+}
+#testimonial {
+  background-color: rgb(247, 247, 247);
+  padding-bottom: 6.25rem;
+}
+#testimonial .carousel-indicators {
+  margin-bottom: 0;
+}
+
+/* 
+======================================================================================
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RWD Testimonial <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+======================================================================================
+*/
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  #testimonial .slider-item {
+    padding: 3.43rem;
+  }
+  #testimonial span.carousel-control-prev-icon {
+    display: none;
+  }
+  #testimonial span.carousel-control-next-icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  #testimonial span.carousel-control-prev-icon {
+    display: none;
+  }
+  #testimonial span.carousel-control-next-icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  #testimonial span.carousel-control-prev-icon {
+    background-color: #0dcaf0b5;
+    border-radius: 50%;
+    transform: translatex(10px);
+    transition: 0.4s all ease-in;
+  }
+  #testimonial span.carousel-control-prev-icon:hover {
+    background-color: #0dcaf0;
+    border-radius: 50%;
+    transform: translatex(0);
+    box-shadow: rgb(6 6 6 / 32%) 0px 15px 30px;
+  }
+  #testimonial span.carousel-control-next-icon {
+    background-color: #0dcaf0b5;
+    border-radius: 50%;
+    transform: translatex(0px);
+    transition: 0.4s all ease-in;
+  }
+  #testimonial span.carousel-control-next-icon:hover {
+    background-color: #0dcaf0;
+    border-radius: 50%;
+    transform: translatex(10px);
+    box-shadow: rgb(6 6 6 / 32%) 0px 15px 30px;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                               End Testimonial                              */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                Start Contact                               */
+/* -------------------------------------------------------------------------- */
+
+#contact h3 {
+  left: 22%;
+  bottom: 1.43rem;
+  font-size: 2.25rem;
+}
+#contact p {
+  font-size: 1.06rem;
+  margin-left: 0.87rem;
+}
+#contact label.form-label {
+  font-size: 14px;
+  font-weight: 700;
+}
+#contact .btn-contact button.btn {
+  transition: 0.3s all ease-in;
+}
+#contact .btn-contact button.btn:hover {
+  transform: translateY(-1px);
+}
+/* 
+======================================================================================
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RWD Contact<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+======================================================================================
+*/
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  iframe {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  iframe {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  iframe {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 933px) and (max-width: 1200px) {
+  iframe {
+    width: 104%;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                                End Contact                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                loadinSection                               */
+/* -------------------------------------------------------------------------- */
+#loading {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  z-index: 9999999;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}

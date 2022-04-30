@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="html,css" />
+    <meta name="auther" content="route" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500&family=Cairo:wght@400;700;900&family=Open+Sans:wght@300;500;700&family=Poppins:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;600&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/all.css" rel="stylesheet" />
+
+    <title>bezel</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#f5a623">
+  </head>
+  <body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               STart Navbar                              -->
+    <!-- ----------------------------------------------------------------------- -->
+    <nav
+      id="main"
+      class="navbar navbar-expand-lg navbar-dark px-md-5 py-md-3 fixed-top d-flex align-items-center"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img class="w-50" src="img/logo-light.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-md-4">
+            <li class="nav-item">
+              <a
+                class="nav-link active px-md-3"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#team">team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#services">services</a>
+            </li>
+            <li class="nav-item fontone">
+              <a class="nav-link px-md-3" href="#work">work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#pricing">pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-md-3" href="#contact">contact</a>
+            </li>
+          </ul>
+          <div class="social-media">
+            <ul class="navbar-nav mb-2 mb-lg-0 social">
+              <li class="px-md-3">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="px-md-3">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="px-md-3">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               End Navbar                                -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              Start Header                               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <header id="home">
+      <div class="overlay">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/bg-image-28.jpg"
+                class="d-block w-100 vh-100"
+                alt="..."
+              />
+              <div
+                class="carousel-caption d-flex align-items-center justify-content-center h-100"
+              >
+                <div class="carousel-holder">
+                  <h1>Create With Bezel.</h1>
+                  <p class="lead">
+                    We help ambitious companies create new value.
+                  </p>
+                  <div class="btn-holder">
+                    <button type="button" class="btn btn-info fix-btn">
+                      Warning
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning fix-btn second"
+                    >
+                      Warning
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/bg-image-29.jpg"
+                class="d-block w-100 vh-100"
+                alt="..."
+              />
+              <div
+                class="carousel-caption d-flex align-items-center justify-content-center h-100"
+              >
+                <div class="carousel-holder">
+                  <h1>Create With Bezel.</h1>
+                  <p class="lead">
+                    We help ambitious companies create new value.
+                  </p>
+                  <div class="btn-holder">
+                    <button type="button" class="btn btn-info fix-btn">
+                      Warning
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning fix-btn second"
+                    >
+                      Warning
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span
+              class="fas fa-long-arrow-alt-left d-flex align-items-center justify-content-center"
+              aria-hidden="true"
+            >
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span
+              class="fas fa-long-arrow-alt-right d-flex align-items-center justify-content-center edit"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               End Header                                -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               Start About                               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <h6>WHO WE ARE</h6>
+              <p class="text-muted">
+                We are an innovative company. We develop and design
+                <span class="anmi-about"></span>for <br />costumers around the
+                world. Our clients are some of the most forward-looking
+                companies in the world.
+              </p>
+              <button type="button" class="btn btn-light about">
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                End About                                -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               Start Team                                -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <section id="team">
+      <div class="creative-team text-center">
+        <div class="creative-holder position-relative">
+          <h2>C</h2>
+          <h3 class="position-absolute start-50 translate-middle fw-bolder">
+            Creative Team
+          </h3>
+          <p class="lead text-muted">We are digital thinkers</p>
+        </div>
+      </div>
+
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="team-item position-relative mb-3">
+              <img class="w-100" src="img/team-1.jpg" alt="teamone" />
+              <div class="team-caption">
+                <ul class="team-social list-unstyled">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+                <div class="team-title">
+                  <h4>Luke Cage</h4>
+                  <p>Founder & CEO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="team-item position-relative mb-3">
+              <img class="w-100" src="img/team-2.jpg" alt="teamone" />
+              <div class="team-caption">
+                <ul class="team-social list-unstyled">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+                <div class="team-title">
+                  <h4>Jessica Jones</h4>
+                  <p>Product Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="team-item position-relative mb-3">
+              <img class="w-100" src="img/team-3.jpg" alt="teamone" />
+              <div class="team-caption">
+                <ul class="team-social list-unstyled">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+                <div class="team-title">
+                  <h4>Matt Murdock</h4>
+                  <p>Lead Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="team-item position-relative mb-3">
+              <img class="w-100" src="img/team-4.jpg" alt="teamone" />
+              <div class="team-caption">
+                <ul class="team-social list-unstyled">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+                <div class="team-title">
+                  <h4>Claire Temple</h4>
+                  <p>Sales Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                End Team                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               StrarT Services                           -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-4 mb-md-5 mb-sm-5">
+            <h4 class="servcies-hold">STUNNING DESIGN</h4>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4 mb-md-5 mb-sm-5">
+            <h4 class="servcies-hold">TIME SAVER</h4>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4 mb-md-5 mb-sm-5">
+            <h4 class="servcies-hold">CLEAN CODE</h4>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4 mb-md-5 mb-sm-5">
+            <h4 class="servcies-hold">CUSTOMIZABLE</h4>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4 mb-md-5 mb-sm-5">
+            <h4 class="servcies-hold">PERFECT LAYOUT</h4>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4 mb-md-5 mb-sm-5">
+            <h4 class="servcies-hold">RETINA READY</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="servcies-up position-relative">
+              <h2>W</h2>
+              <h3 class="position-absolute">What We Do.</h3>
+              <p>
+                Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit.
+                Aliquam Ipsam Ullam Incidunt Itaque Nemo Omnis Temporibus Totam
+                Quibusdam Repellat Vero, Recusandae Excepturi Dignissimos Velit
+                Et Alias Amet, Quia Facilis Perferendis.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 offset-lg-2 mt-4">
+            <ul class="check-list list-unstyled">
+              <li><i class="far fa-check-circle px-2"></i>Research</li>
+              <li>
+                <i class="far fa-check-circle px-2"></i>Opportunity Analysis
+              </li>
+              <li><i class="far fa-check-circle px-2"></i>Consulting</li>
+              <li><i class="far fa-check-circle px-2"></i>Brand Planning</li>
+              <li><i class="far fa-check-circle px-2"></i>Customer Support</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 mt-4">
+            <ul class="check-list list-unstyled">
+              <li><i class="far fa-check-circle px-2"></i>Logo & Branding</li>
+              <li><i class="far fa-check-circle px-2"></i>Style guides</li>
+              <li><i class="far fa-check-circle px-2"></i>Motion graphics</li>
+              <li><i class="far fa-check-circle px-2"></i>UX/UI-design</li>
+              <li>
+                <i class="far fa-check-circle px-2"></i>Social media design
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               End Services                               -->
+    <!-- -----------------------------------------------------------------------  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                Start Work                               -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <section id="work">
+      <div class="creative-team text-center">
+        <div class="creative-holder position-relative">
+          <h2>C</h2>
+          <h3 class="position-absolute start-50 translate-middle fw-bolder">
+            Cheap Prices
+          </h3>
+          <p class="lead text-muted">We provide the best quality.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mt-5">
+            <div class="pricing-holder">
+              <div class="pricing-head">
+                <h3>Starter</h3>
+              </div>
+              <div class="price"><span>$</span>9</div>
+              <ul
+                class="pricing-item list-unstyled border-top border-secondary"
+              >
+                <li class="mt-3 fw-bolder fix">Unlimited Connections</li>
+                <li class="mt-3 fw-bolder fix">24/7 Support</li>
+                <li class="mt-3 fw-bolder fix">Full SSL Protection</li>
+                <li class="mt-3 fw-bolder fix">Unlimited Channels</li>
+              </ul>
+              <div class="pricing-footer">
+                <button type="button" class="btn btn-info">
+                  <a class="text-decoration-none fw-bolder text-white" href="#"
+                    >sign up</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mt-5">
+            <div class="pricing-holder">
+              <div class="pricing-head">
+                <h3>Silver</h3>
+              </div>
+              <div class="price"><span>$</span>19</div>
+              <ul
+                class="pricing-item list-unstyled border-top border-secondary"
+              >
+                <li class="mt-3 fw-bolder fix">Unlimited Connections</li>
+                <li class="mt-3 fw-bolder fix">24/7 Support</li>
+                <li class="mt-3 fw-bolder fix">Full SSL Protection</li>
+                <li class="mt-3 fw-bolder fix">Unlimited Channels</li>
+              </ul>
+              <div class="pricing-footer">
+                <button type="button" class="btn btn-info">
+                  <a class="text-decoration-none fw-bolder text-white" href="#"
+                    >sign up</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mt-5">
+            <div class="pricing-holder featured">
+              <div class="row">
+                <div class="pricing-head holder">
+                  <div class="pricing-head col-md-6">
+                    <h3>Gold</h3>
+                  </div>
+                  <div class="col-md-6 me-md-auto">
+                    <button
+                      type="button"
+                      class="btn btn-info fw-bolder text-white rounded-pill"
+                    >
+                      Best Value
+                    </button>
+                  </div>
+                </div>
+                <div class="price"><span>$</span>29</div>
+                <ul
+                  class="pricing-item list-unstyled border-top border-secondary"
+                >
+                  <li class="mt-3 fw-bolder fix">Unlimited Connections</li>
+                  <li class="mt-3 fw-bolder fix">24/7 Support</li>
+                  <li class="mt-3 fw-bolder fix">Full SSL Protection</li>
+                  <li class="mt-3 fw-bolder fix">Unlimited Channels</li>
+                </ul>
+                <div class="pricing-footer">
+                  <button type="button" class="btn btn-info">
+                    <a
+                      class="text-decoration-none fw-bolder text-white"
+                      href="#"
+                      >sign up</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mt-5">
+            <div class="pricing-holder">
+              <div class="pricing-head">
+                <h3>Platinum</h3>
+              </div>
+              <div class="price"><span>$</span>49</div>
+              <ul
+                class="pricing-item list-unstyled border-top border-secondary"
+              >
+                <li class="mt-3 fw-bolder fix">Unlimited Connections</li>
+                <li class="mt-3 fw-bolder fix">24/7 Support</li>
+                <li class="mt-3 fw-bolder fix">Full SSL Protection</li>
+                <li class="mt-3 fw-bolder fix">Unlimited Channels</li>
+              </ul>
+              <div class="pricing-footer">
+                <button type="button" class="btn btn-info">
+                  <a class="text-decoration-none fw-bolder text-white" href="#"
+                    >sign up</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                End Work                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            Start Testimonial                            -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <section id="testimonial" class="">
+      <div class="container">
+        <h2 class="text-center">HAPPY CUSTOMERS</h2>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner px-md-5">
+            <div class="carousel-item active p-md-5 mt-5">
+              <div
+                class="slider-item text-center position-relative bg-white rounded"
+              >
+                <div
+                  class="slider-image position-absolute start-50 translate-middle top-0"
+                >
+                  <img
+                    src="img/testimonial-1.jpg"
+                    class="d-block w-100 rounded-circle"
+                    alt="testimonial-1 "
+                  />
+                </div>
+                <h3 class="fw-bolder">Mark Zuckerberg</h3>
+                <span class="mb-md-3 fw-bolder">Founder & CEO, Facebook</span>
+                <p class="lead text-muted">
+                  Consectetur adipisicing elit. Perspiciatis aperiam quaerat
+                  iure veritatis fugit debitis, repellat aut accusantium culpa
+                  ipsum ex ipsa blanditiis recusandae, sit similique, eius
+                  assumenda porro pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item p-md-5 mt-5">
+              <div
+                class="slider-item text-center position-relative bg-white rounded"
+              >
+                <div
+                  class="slider-image position-absolute start-50 translate-middle top-0"
+                >
+                  <img
+                    src="img/testimonial-1.jpg"
+                    class="d-block w-100 rounded-circle"
+                    alt="testimonial-1 "
+                  />
+                </div>
+                <h3 class="fw-bolder">Mark Zuckerberg</h3>
+                <span class="mb-md-3 fw-bolder">Founder & CEO, Facebook</span>
+                <p class="lead text-muted">
+                  Consectetur adipisicing elit. Perspiciatis aperiam quaerat
+                  iure veritatis fugit debitis, repellat aut accusantium culpa
+                  ipsum ex ipsa blanditiis recusandae, sit similique, eius
+                  assumenda porro pariatur.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            End Testimonial                              -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               Start contact                             -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.05352747948!2d29.975175991606974!3d31.246941497705212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5db8a16c3c77d%3A0x24c465e134255814!2sRoute!5e0!3m2!1sen!2seg!4v1640422542149!5m2!1sen!2seg"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div
+            class="col-lg-5 col-md-11 col-sm-12 offset-md-1 offset-sm-0 py-md-5"
+          >
+            <div class="creative-team">
+              <div class="creative-holder position-relative">
+                <h2>C</h2>
+                <h3 class="position-absolute translate-middle fw-bolder">
+                  Get In Touch
+                </h3>
+                <p class="lead text-muted">Let's work together.</p>
+              </div>
+            </div>
+            <form class="pe-md-5 ps-md-3">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control py-md-3 border border-2"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  name="name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Your Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control py-md-3 border border-2"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Phone Number</label
+                >
+                <input
+                  type="number"
+                  class="form-control py-md-3 border border-2"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  name="phoneNumber"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Your Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="floatingTextarea"
+                  style="height: 100px"
+                  name="Message"
+                ></textarea>
+              </div>
+              <div class="btn-contact">
+                <button type="submit" class="btn btn-info text-white fw-bolder">
+                  send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               End contact                                -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              loadingSectin                              -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <section id="loading" class="align-items-center justify-content-center">
+      <div class="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js" rel="stylesheet"></script>
+    <script src="js/script.js" rel="stylesheet"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
